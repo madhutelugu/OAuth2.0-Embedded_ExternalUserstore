@@ -1,0 +1,16 @@
+server:
+  port: 9999
+  
+security:
+    user:
+      password: password
+    oauth2:
+      resource:
+        filter-order: 3
+  
+spring:
+  ldap:
+    urls: ldap://dev.zetaoptdemo.com:389/
+    base: ou=clients,dc=zetaopt,dc=com
+    username: cn=ldapadm,dc=zetaopt,dc=com
+    password: devsaas123
